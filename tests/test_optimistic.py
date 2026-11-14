@@ -1,8 +1,8 @@
 import pytest
 
-from pytw.models.phold import Phold, PholdState
-from pytw.optimistic import Optimistic
-from pytw.runner import build as runner_build
+from pytimewarp.models.phold import Phold, PholdState
+from pytimewarp.optimistic import Optimistic
+from pytimewarp.runner import build as runner_build
 from tests.mpi_snapshot import requires_mpiexec, run_mpi, snapshot
 
 

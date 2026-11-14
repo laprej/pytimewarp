@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 
-from pytw.event import Event
-from pytw.logical_process import LogicalProcess
-from pytw.state import State
+from pytimewarp.event import Event
+from pytimewarp.logical_process import LogicalProcess
+from pytimewarp.state import State
 
 
 class Model(ABC):

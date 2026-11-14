@@ -2,8 +2,8 @@ import copy
 
 import pytest
 
-from pytw.models.phold import Phold, PholdState
-from pytw.runner import build as runner_build
+from pytimewarp.models.phold import Phold, PholdState
+from pytimewarp.runner import build as runner_build
 
 
 def build(nlps=16, seed=0, **kwargs):

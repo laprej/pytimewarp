@@ -4,7 +4,7 @@ from dataclasses import dataclass
 
 from mpi4py import MPI
 
-from pytw.event import Event
+from pytimewarp.event import Event
 
 
 @dataclass

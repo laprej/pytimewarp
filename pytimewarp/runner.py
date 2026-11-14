@@ -1,8 +1,8 @@
 """Run a model and report its event rate.
 
 Usage:
-    python -m pytw.runner --model phold --nlps 64 --end 200 --percent-remote 0.5
-    mpiexec -n 4 pytw --model phold --engine optimistic --nlps 64 --end 200
+    python -m pytimewarp.runner --model phold --nlps 64 --end 200 --percent-remote 0.5
+    mpiexec -n 4 pytimewarp --model phold --engine optimistic --nlps 64 --end 200
 
 Model options are generated from the keyword arguments (with defaults) of the
 model's constructor, e.g. Phold(..., start_events=5) becomes --start-events.
@@ -17,12 +17,12 @@ import time
 
 from mpi4py import MPI
 
-from pytw.logical_process import LogicalProcess as LP
-from pytw.models.airport import Airport, AirportState
-from pytw.models.phold import Phold, PholdState
-from pytw.optimistic import Optimistic
-from pytw.processing_element import ProcessingElement
-from pytw.sequential import Sequential
+from pytimewarp.logical_process import LogicalProcess as LP
+from pytimewarp.models.airport import Airport, AirportState
+from pytimewarp.models.phold import Phold, PholdState
+from pytimewarp.optimistic import Optimistic
+from pytimewarp.processing_element import ProcessingElement
+from pytimewarp.sequential import Sequential
 
 # name -> (model class, state class)
 MODELS = {
@@ -73,14 +73,14 @@ def build(model_cls, state_cls, nlps, seed, model_kwargs, engine=None):
 
 def version():
     try:
-        return importlib.metadata.version("pytw")
+        return importlib.metadata.version("pytimewarp")
     except importlib.metadata.PackageNotFoundError:
         # running from a checkout that was never installed
         return "unknown"
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description="Run a pytw model and report its event rate.")
+    parser = argparse.ArgumentParser(description="Run a pytimewarp model and report its event rate.")
     parser.add_argument("--version", action="version", version=f"%(prog)s {version()}")
     parser.add_argument("--model", required=True, choices=MODELS, help="model to run")
     parser.add_argument(

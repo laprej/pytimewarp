@@ -1,5 +1,5 @@
-# from pytw.models.base import Base
-from pytw.base_model import BaseModel
+# from pytimewarp.models.base import Base
+from pytimewarp.base_model import BaseModel
 
 
 def test_foo():

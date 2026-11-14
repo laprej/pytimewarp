@@ -1,9 +1,9 @@
 import bisect
 import heapq
 
-from pytw.event import Event
-from pytw.processing_element import ProcessingElement
-from pytw.rng import SplitMix64
+from pytimewarp.event import Event
+from pytimewarp.processing_element import ProcessingElement
+from pytimewarp.rng import SplitMix64
 
 
 class LogicalProcess:

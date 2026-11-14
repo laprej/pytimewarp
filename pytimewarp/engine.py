@@ -1,6 +1,6 @@
 from abc import ABC
 
-from pytw.mpi import MPIBase
+from pytimewarp.mpi import MPIBase
 
 
 class Engine(MPIBase, ABC):
@@ -15,7 +15,7 @@ class Engine(MPIBase, ABC):
     """
 
     def __init__(self, et) -> None:
-        from pytw.logical_process import LogicalProcess as LP
+        from pytimewarp.logical_process import LogicalProcess as LP
 
         super().__init__()
         self.lp: list[LP] = []

@@ -2,7 +2,7 @@ import pickle
 
 import pytest
 
-from pytw.event import Event
+from pytimewarp.event import Event
 
 
 def test_timestamp_required():
