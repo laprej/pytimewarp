@@ -18,8 +18,8 @@ from pathlib import Path
 import pytest
 from mpi4py import MPI
 
-from pytw.optimistic import Optimistic
-from pytw.runner import MODELS, build
+from pytimewarp.optimistic import Optimistic
+from pytimewarp.runner import MODELS, build
 
 HAVE_MPIEXEC = shutil.which("mpiexec") is not None
 if not HAVE_MPIEXEC:

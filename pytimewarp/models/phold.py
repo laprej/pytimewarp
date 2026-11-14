@@ -6,10 +6,10 @@ schedules exactly one new event, either to itself or (with probability
 percent_remote) to a uniformly random LP, at now + lookahead + Exp(mean).
 """
 
-from pytw.event import Event
-from pytw.logical_process import LogicalProcess
-from pytw.model import Model
-from pytw.state import State
+from pytimewarp.event import Event
+from pytimewarp.logical_process import LogicalProcess
+from pytimewarp.model import Model
+from pytimewarp.state import State
 
 
 class PholdState(State):

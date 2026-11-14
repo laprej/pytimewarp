@@ -1,6 +1,6 @@
 import pytest
 
-from pytw.rng import SplitMix64
+from pytimewarp.rng import SplitMix64
 
 
 def test_reference_outputs():

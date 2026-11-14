@@ -2,10 +2,10 @@ from random import random
 
 import pytest
 
-from pytw.event import Event
-from pytw.logical_process import LogicalProcess
-from pytw.processing_element import ProcessingElement
-from pytw.sequential import Sequential
+from pytimewarp.event import Event
+from pytimewarp.logical_process import LogicalProcess
+from pytimewarp.processing_element import ProcessingElement
+from pytimewarp.sequential import Sequential
 
 
 @pytest.fixture

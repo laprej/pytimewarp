@@ -15,10 +15,10 @@ Landed:    in_the_air -= 1, on_the_ground += 1, schedule Departure at
 Departure: on_the_ground -= 1, schedule Arrival at another airport.
 """
 
-from pytw.event import Event
-from pytw.logical_process import LogicalProcess
-from pytw.model import Model
-from pytw.state import State
+from pytimewarp.event import Event
+from pytimewarp.logical_process import LogicalProcess
+from pytimewarp.model import Model
+from pytimewarp.state import State
 
 
 class AirportState(State):

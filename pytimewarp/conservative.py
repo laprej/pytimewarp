@@ -1,6 +1,6 @@
 from mpi4py import MPI
 
-from pytw.engine import Engine
+from pytimewarp.engine import Engine
 
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()

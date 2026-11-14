@@ -2,9 +2,9 @@ import copy
 
 import pytest
 
-from pytw.models.airport import Airport, AirportState, Arrival, Landed
-from pytw.optimistic import Optimistic
-from pytw.runner import build as runner_build
+from pytimewarp.models.airport import Airport, AirportState, Arrival, Landed
+from pytimewarp.optimistic import Optimistic
+from pytimewarp.runner import build as runner_build
 from tests.mpi_snapshot import requires_mpiexec, run_mpi, snapshot
 
 

@@ -1,6 +1,6 @@
 from random import random
 
-from pytw.event import Event
+from pytimewarp.event import Event
 
 
 def test_seq(PE):

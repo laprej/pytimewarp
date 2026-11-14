@@ -4,9 +4,9 @@ from queue import Queue
 
 from mpi4py import MPI
 
-from pytw.engine import Engine
-from pytw.event import Event
-from pytw.mpi import MPIBase
+from pytimewarp.engine import Engine
+from pytimewarp.event import Event
+from pytimewarp.mpi import MPIBase
 
 # events and anti-messages share a tag so MPI's non-overtaking guarantee keeps an
 # anti-message from arriving before the event it cancels

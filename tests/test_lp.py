@@ -2,8 +2,8 @@ import random
 
 import pytest
 
-from pytw.event import Event
-from pytw.logical_process import LogicalProcess
+from pytimewarp.event import Event
+from pytimewarp.logical_process import LogicalProcess
 
 
 @pytest.fixture
